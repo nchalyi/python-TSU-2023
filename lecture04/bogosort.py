@@ -7,4 +7,13 @@ print('Non-sorted list >> ',rl)
 while rl != sorted(rl):
     shuffle(rl)
 
+# Альтернативный способ решения, без встроеной функции sorted():
+# def is_sorted(list):
+#     for i in range(0, len(list)-1):
+#         if (list[i] > list[i+1] ):
+#             return False
+#     return True
+# while (is_sorted(rl) == False):
+#     shuffle(rl)
+
 print('Sorted list >> ',rl)
